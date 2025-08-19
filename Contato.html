@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmeGatos: Contate-nos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/Normalize.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="Imagens/favicon-32x32.png">
+    <!--Grupo composto por Yuri, Kaio Rafael e Marcelo Tadeu-->
+    <style>
+    html {
+        background-image: url('https://images.pexels.com/photos/3155894/pexels-photo-3155894.jpeg'); /* Atalho para várias propriedades */
+        background-size: cover; /* Garante que a imagem cubra todo o body */
+        background-position: 0px;
+        margin: 0; /* Remover margens padrão do body */
+        min-height: 100vh; /* Garante que o body ocupe pelo menos a altura da tela */
+        overflow-x: hidden; /* Evita barra de rolagem horizontal se a imagem for muito larga */
+        height: 100%;
+    }
+                   main {
+        /* não precisa ser um flex container em si se você quer centralizar apenas um item dentro dele. */
+        /* Se você quisesse centralizar múltiplos itens DENTRO do main, usaria flexbox aqui. */
+        width: 100%;
+        display: flex; /* Mantém o main como flex container para centralizar o .form-container */
+        justify-content: center; /* Centraliza o .form-container horizontalmente dentro do main */
+        align-items: flex-start; /* Alinha o .form-container ao topo do main (pode ser center se quiser centralizar verticalmente na main) */
+        padding-top: 50px; /* Um espaço para o menu sticky, se necessário */
+    }
+
+    textarea{
+        color: #692D66;
+    }
+
+    .ALL{
+        color: #692D66;
+        border-top: 20px;
+
+    }
+ body{
+                font-family: Arial, Helvetica, sans-serif;
+            }
+    </style>
+</head>
+<!--Grupo composto por Yuri, Kaio Rafael e Marcelo Tadeu-->
+<body>
+    <header>
+        <div class="Menu">
+            <div class="Menu1">
+                <img src="Imagens/Logo do Menu.png" alt="Logo" height="76px" width="240" >
+                <div class="MenuSites">
+                    <ul class="Lista">
+                        <li><a href="Index.html">Inicio</a></li>
+                        <li><a href="Gatos-Salvos.html">Gatos-Salvos</a></li>
+                        <li><a href="Sobre Nós.html">Sobre Nós</a></li>
+                        <li><a href="Contato.html">Contato</a></li>
+                        <li><a href="Produtos.html">Produtos</a></li>
+                        <li><a href="motivosparaadotar.html">Adotar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+  <main>
+    
+        
+<div class="container"> <h1 class="Titulooo">Formulário de Contato</h1>
+            
+    <div class="ALL">            <!-- Formularios -->
+            <fieldset class="quase-tudo">
+                <div id="Dados">
+                    <fieldset>
+                        <b>Seus Dados</b> <br><br>
+                                    
+                            <p>
+                                
+                                <label for="Nome">Nome Completo*: </label>
+                                <input type="text" id="Nome"  required><br>
+
+                                <label for="Email">E-mail*: </label>
+                                <input type="email" id="Email" required><br>
+
+                                <label for="telefone">Telefone: </label>
+                                <input type="tel" id="telefone" placeholder="(XX) XXXXX-XXXX"><br>
+
+                                <label for="cidade">Cidade: </label>
+                                <input type="text" id="cidade"><br>
+
+                                <label for="estado">Estado: </label>
+                                <select name="Estado" id="estado">
+                                
+                                    <option value="acre">Acre</option>
+                                    <option value="Alagoas">Alagoas</option>
+                                    <option value="Amapá">Amapá</option>
+                                    <option value="Amazonas">Amazonas</option>
+                                    <option value="Bahia">Bahia</option>
+                                    <option value="Ceará">Ceará</option>
+                                    <option value="Distrito Federal">Distrito Federal</option>
+                                    <option value="Espirito Santo">Espirito Santo</option>
+                                    <option value="Goiás">Goiás</option>
+                                    <option value="Maranhão">Maranhão</option>
+                                    <option value="Mato Grosso">Mato Grosso</option>
+                                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                                    <option value="Minas Gerais">Minas Gerais</option>
+                                    <option value="Pará">Pará</option>
+                                    <option value="Paraiba">Paraiba</option>
+                                    <option value="Paraná">Paraná</option>
+                                    <option value="Pernanbuco">Pernanbuco</option>
+                                    <option value="Piauí">Piauí</option>
+                                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                                    <option value="Rondônia">Rondônia</option>
+                                    <option value="Roraima">Roraima</option>
+                                    <option value="Santa Catarina">Santa Catarina</option>
+                                    <option value="São Paulo">São Paulo</option>
+                                    <option value="Sergipe">Sergipe</option>
+                                    <option value="Tocantins">Tocantins</option>
+                                </select>
+                    </fieldset>
+                </div>
+                            
+            
+                    
+                    
+                <div id="Mensagem">
+                    <p>
+                        
+                    <fieldset>
+                            <b>Sua mensagem</b> <br> <br>
+                                        
+                            <Label for = "Assunto">Assunto*: </Label>
+                            <select name="Assunto" id="Assunto" required>
+                                <option value="Selecione">Selecione</option>
+                                <option value="Dúvidas sobre gatos">Dúvidas sobre gatos</option>
+                                <option value="Sugestão de conteúdo">Sugestão de conteúdo</option>
+                                <option value="Proposta de parceria">Proposta de parceria</option>
+                                <option value="Outro assunto">Outro assunto</option>
+                            </select><br>
+
+                            <label for="mensagem">Mensagem*: </label>
+                            <textarea rows="5" cols="50" maxlength="200" required></textarea><br>
+
+                            <label for="Destino de Interesse">O que deseja opinar sobre a AmeGatos: </label>
+                            <input type="text" id="Destino de Interesse" placeholder="Ex: Os gatos são fofos.">
+                    
+                        </fieldset>
+                    </p>
+                </div>
+                    
+                <div id="Preferências">
+                    
+                        <p>
+                        
+                    <fieldset>
+                            <b>Preferências</b> <br> <br>
+                                <p>
+                                O que gostou na instituiçãoAmeGatos: 
+
+                                    <input type="checkbox" id = "Amor por gatos">
+                                    <label for="O carinho que é dado para os gatinhos">O carinho que é dado para os gatinhos</label>
+                                    
+                                    <input type="checkbox" id = "Dicas">
+                                    <label for="Dicas de como cuidar bem dos gatos">Dicas de como cuidar bem dos gatos</label>
+
+                                    <input type="checkbox" id = "Fotos de gatos fofos">
+                                    <label for="Fotos de gatos fofos">Fotos de gatos fofos</label>
+
+                                    <input type="checkbox" id = "Resgate">
+                                    <label for="Resgate de gatos">Resgate de gatos</label><br>
+
+                                </p>
+                            <p>
+                            Como conheceu a AmeGatos: 
+                            
+                            
+                                <input type="radio" id = "Google">
+                                <label for="Google">Google</label>
+
+                                <input type="radio" id = "Redes Sociais">
+                                <label for="Redes Sociais">Redes Sociais</label>
+                                
+                                <input type="radio" id = "Indicação de amigos">
+                                <label for="Indicação de amigos">Indicação de amigos</label>
+                                
+                                <input type="radio" id = "Outro meio">
+                                <label for="Outro meio">Outro meio</label>
+                            </p>
+                            <footer>
+                                <input type="checkbox" id="desejo">
+                                <label for="desejo"> Desejo receber novidades e dicas de como cuidar do meu gato.</label>
+                            </footer>
+                        </p>
+                    </fieldset>
+                </div>
+                    <p></p>
+                <div>
+                    
+                    <p>
+                        <fieldset>
+                            <b>Arquivo e envio</b> <br> <br>
+                            
+                                
+                                <label for="Arquivos">Enviar foto ou documento (opcional): </label>
+                                <input type="file" id="Arquivos">
+                                <footer>
+                                    <input type="submit" placeholder="Enviar Mensagem">
+                                    <input type="reset" placeholder="Limpar Formulário">
+
+                                </footer><br>
+                                *Campos Obrigatórios
+                        </fieldset>
+                    </p>
+                </div>
+            </fieldset>
+        </div>       
+</div>
+          
+
+    </main>
+    <footer>
+        <div class="Menu">
+            <div class="Menu1">
+                <img src="Imagens/Logo do Menu.png" alt="Logo" height="76px" width="240" >
+                <div class="MenuSites">
+                    <p style="color: white;">AmeGatos - A instituição Nº1 do seu gatinho.
+                            Salvando gatos desde 2025.
+
+                           <a href="" class="Links">Youtube </a>
+                           <a href="" class="Links">Instagram </a>
+                           <a href="" class="Links">Facebook </a>
+                            © 2025 AmeGatos. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>
+
+<!--
+    ⠁⠁⠁⠁⠁⠁⠁⢀⣴⣶⣿⣿⣷⣶⣦⡀⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
+    ⠁⠁⠁⠁⠁⠁⠁⣠⣿⣿⣿⣿⣿⣿⣟⣿⣿⣧⣄⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁
+    ⠁⠁⠁⠁⣠⣴⣾⣿⣿⣿⣿⣿⣿⣷⣿⣷⣿⣿⣿⣷⣦⣄⡀⠁⠁⠁⠁⠁⠁
+    ⢀⣠⠶⠿⠿⠛⠛⠛⠛⠛⠛⠉⠋⠉⠋⠙⠙⠋⠛⠛⠟⠿⠿⣷⣦⡀⠁⠁⠁
+    ⠘⠤⡁⡐⢀⠁⠁⡀⠂⢀⠁⢀⠁⠂⠁⡀⢀⠁⡀⢀⠁⠁⠁⠁⢉⡹⠁⠁⠁
+    ⠁⠁⠁⠁⠁⠄⣦⣾⡼⠁⣤⢄⠤⠠⠠⠄⢠⠁⡄⢠⢀⡢⠦⠁⠁⡀⠁⠁⠁
+    ⠁⠁⠁⠁⠁⠘⠥⡄⣀⠓⢍⢡⢃⡜⢰⠨⠦⠊⠈⠁⠁⢀⢀⠁⡌⢸⡇⠁⠁
+    ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠉⠈⣠⣕⢀⢆⢑⡑⢤⣢⡀⠆⢐⠁⠁⢂⠜⠳⠶⡄
+    ⠁⠁⠁⠁⠁⠁⠁⢀⣀⠤⢾⡟⣫⠝⠖⡡⠃⠂⠠⠙⠲⠤⣀⠁⡁⢀⢂⡐⠃
+    ⠁⠁⠁⢀⣠⣴⢶⡏⠈⠁⣺⢞⡏⡝⠬⡠⢂⡘⣐⣤⠁⠁⠉⠢⣄⣀⡀⠁⠁
+    ⠁⠁⠁⡛⠁⠁⠁⠁⠁⠁⣿⣮⡧⣽⢶⣵⣿⣾⣧⣿⡦⠂⠁⠁⠠⠁⡎⡩⠁
+    ⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠘⠳⣻⣾⡿⡽⡧⣟⡝⢷⢖⣶⣄⠁⠁⠁⠁⠁
+    ⠁⠁⠁⠁⠁⠁⠁⠁⠁⣀⠁⠁⠁⣹⡿⣿⠟⠁⠁⣤⣿⢺⡆⡟⢧⠁⠁⠁⠁
+    ⠁⠁⠁⠁⠁⠁⠖⡛⠻⠛⠿⢟⢿⢻⡻⣯⠁⠁⠈⠛⠘⠁⠃⠑⠁⠁⠁⠁⠁
+    ⠁⠁⠁⠁⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠈⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁⠁ ⠀
+    -->

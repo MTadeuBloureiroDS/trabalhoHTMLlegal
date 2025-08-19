@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+html{
+    background-color:  #FFDEAD	;
+}
+
+.header-container{
+ background: url('https://placekitten.com/1200/400') no-repeat center/cover;
+ display: flex;
+ background-color: rgba(99, 3, 3, 0.5);
+ padding: 30px 15px;
+ border: none;
+}
+.logo{
+ margin: 10px 20px 30px 40px;
+}
+.title{
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 45px;
+ font-weight: 700;
+ font-style: normal;
+ text-shadow: 2.5px 2.5px 2.5px rgba(99, 3, 3, 0.5);        
+}
+.p-1{
+ font-size: 20px;
+ font-family: Arial, Helvetica, sans-serif;
+ font-optical-sizing: auto;
+ text-align: center;
+ font-weight: weight;
+ font-style: normal;
+}
+a{
+ text-decoration: none;
+ color: #000000;
+ font-family: Arial, Helvetica, sans-serif ;
+ text-shadow: 2.5px 2.5px 2.5px rgba(99, 3, 3, 0.5);
+}
+nav{
+ background-color:rgba(182, 93, 93, 0.5);
+ padding: 10px;
+ text-align: center;
+}
+strong{
+ font-family: "Fuzzy Bubbles", sans-serif;
+}
+
+p{
+ font-family: "Inter", sans-serif;
+}
+.quote{
+ font-size: large;
+}
+
+section h2{
+ font-family: "Fuzzy Bubbles", sans-serif;
+
+}
+   footer {
+
+       padding: 10px;
+       text-align:center;
+       position:static
+       
+       
+   }
+
+   footer div {
+       display: flex;
+       justify-content: space-around;
+       align-items: center;
+   }
+
+   footer p {
+       margin: 10;
+   }
